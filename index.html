@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <script defer src="./js/scripts.js"></script>
-
-    <title>Teste APII</title>
+    <title>Teste API</title>
 </head>
 <body>
     <main>
+        
         <h1>
         Nome:
         <span class="nomePokemon"></span>
@@ -18,14 +17,21 @@
         <span class="tipoPokemon"></span>
         <br>
         Id:
-        <span class="idPokemon"></span>
+        <span id="idPokemon" class="idPokemon"></span>
         <br>
         Shiny
         <img src="imagemPokemon" alt="" class="imagemPokemon" >
         Normal
         <img src="imagemAnimadaPokemon" alt="" class="imagemAnimadaPokemon" >
 
+        <form action="" id="form">
+            <input type="text" name="texto" id="texto">
+            <input type="submit" value="botao" id="botao">
+            <input type="submit" value="proximo" id="proximo">
+            <input type="submit" value="anterior" id="anterior">
+        </form>
     </main>
+
     
 </body>
 </html>
