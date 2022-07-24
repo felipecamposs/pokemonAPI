@@ -1,0 +1,63 @@
+@font-face {
+    font-family: fonte-pokemon;
+    src: url(../fonts/Pokemon\ Solid.ttf)
+}
+h1 {
+    font-family: fonte-pokemon;
+}
+
+body {
+    text-align: center;
+}
+
+.fotoPokemon {
+    width: 60px;
+    height: 60px;
+}
+
+.imagemAnimadaPokemon {
+    width: 150px;
+    height: 150px;
+}
+
+.imagemAnimadaShinyPokemon {
+    width: 150px;
+    height: 150px;
+}
+
+.idPokemon {
+    font-family: fonte-pokemon;
+    font-size: 30px;
+}
+
+.nomePokemon {
+    font-family: fonte-pokemon;
+    font-size: 30px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+.tipoPokemon1 {
+    font-family: fonte-pokemon;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.tipoPokemon2 {
+    font-family: fonte-pokemon;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.animadaNormal {
+    font-family: fonte-pokemon;
+    text-align: center;
+    position: absolute;
+}
+
+.animadaShiny {
+    font-family: fonte-pokemon;
+    position: absolute;
+}
