@@ -4,8 +4,13 @@ const fotoShinyPokemon = document.querySelector('.fotoShinyPokemon');
 const idPokemon = document.querySelector('.idPokemon');
 const tipoPokemon1 = document.querySelector('.tipoPokemon1');
 const tipoPokemon2 = document.querySelector('.tipoPokemon2');
-const imagemAnimadaPokemon = document.querySelector('.imagemAnimadaPokemon');
-const imagemAnimadaShinyPokemon = document.querySelector('.imagemAnimadaShinyPokemon');
+const altura = document.querySelector('.altura');
+const peso = document.querySelector('.peso');
+const move1 = document.querySelector('.move1');
+const move2 = document.querySelector('.move2');
+const move3 = document.querySelector('.move3');
+const move4 = document.querySelector('.move4');
+
 
 const form = document.querySelector('.form');
 const inputPesquisa = document.querySelector('.inputPesquisa');
@@ -20,13 +25,16 @@ const buscaPokemon = async (pokemon) => {
 
 const dadosPokemon = async (pokemon) => {
     const data = await buscaPokemon(pokemon);
-    idPokemon.innerHTML = data['id'];
     nomePokemon.innerHTML = data.name;
-    fotoPokemon.src = data['sprites']['other']['dream_world']['front_default'];
+    fotoPokemon.src = data['sprites']['other']['official-artwork']['front_default'];
     tipoPokemon1.innerHTML = data['types']['0']['type']['name'];
     tipoPokemon2.innerHTML = data['types']['1']['type']['name'];
-    imagemAnimadaPokemon.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
-    imagemAnimadaShinyPokemon.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_shiny'];
+    altura.innerHTML = data.height;
+    peso.innerHTML = data.weight;
+    move1.innerHTML = data['moves']['0']['move']['name'];
+    move2.innerHTML = data['moves']['1']['move']['name'];
+    move3.innerHTML = data['moves']['2']['move']['name'];
+    move4.innerHTML = data['moves']['3']['move']['name'];
     feijao = data.id;
 }
 

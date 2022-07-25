@@ -13,30 +13,37 @@
     <title>Pokémon</title>
 </head>
 <body>
-    <main>
-        <h1>PoKéMoN</h1>
-        <div class="infoPokemon">
-            <span class="idPokemon"></span> -
-            <span class="nomePokemon"></span> 
+    <div class="container">
+        <div class="card">
+          <div class="fundo">
             <img class="fotoPokemon"></i>
-            <p>
+          </div>
+          <div class="info">
+            <h1><span class="nomePokemon"></span></h1>
             <span class="tipoPokemon1"></span>
             <span class="tipoPokemon2"></span>
-            </p>
-            <label for="normal" class="animadaNormal">Normal</label>
-            <img class="imagemAnimadaPokemon"></i>
-            <label for="shiny" class="animadaShiny">Shiny</label>
-            <img class="imagemAnimadaShinyPokemon"></i>
+          </div>
+          <div class="pokemon-stats">
+            Altura: <span class="altura"></span>
+            Peso: <span class="peso"></span>
+          </div>
+          <div class="moves"><br>
+            Moves: <br>
+            <span class="move1"></span><br>
+            <span class="move2"></span><br>
+            <span class="move3"></span><br>
+            <span class="move4"></span><br>
+            </div>
         </div>
-
-        <form class="form">
+      </div>
+      <form class="form">
             <input type="search" class="inputPesquisa" required>
             <button class="fa fa-search" id="botaoPesquisar"></button>
         </form>
-    </main>
     <div class="buttons">
         <button class="botaoAnterior" id="botaoAnterior">Anterior</button>
         <button class="botaoProximo" id="botaoProximo">Próximo</button>
     </div>
+    
 </body>
 </html>

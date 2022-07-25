@@ -2,6 +2,12 @@
     font-family: fonte-pokemon;
     src: url(../fonts/Pokemon\ Solid.ttf)
 }
+
+@font-face {
+    font-family: Pixellari;
+    src: url(../fonts/Pixellari.ttf)
+}
+
 h1 {
     font-family: fonte-pokemon;
 }
@@ -11,53 +17,101 @@ body {
 }
 
 .fotoPokemon {
-    width: 60px;
-    height: 60px;
-}
-
-.imagemAnimadaPokemon {
-    width: 150px;
-    height: 150px;
-}
-
-.imagemAnimadaShinyPokemon {
-    width: 150px;
-    height: 150px;
-}
-
-.idPokemon {
-    font-family: fonte-pokemon;
-    font-size: 30px;
+    width: 220px;
+    height: 220px;
+    position: relative; 
 }
 
 .nomePokemon {
     font-family: fonte-pokemon;
-    font-size: 30px;
+    font-size: 40px;
     text-transform: capitalize;
     letter-spacing: 3px;
+    font-weight: 400;
 }
 
 .tipoPokemon1 {
-    font-family: fonte-pokemon;
-    font-size: 20px;
+    font-family: Pixellari;
+    font-size: 25px;
     text-transform: capitalize;
-    letter-spacing: 2px;
+    margin: 0px 0 0px 110px;
+    display: flex;
+    position: absolute;
 }
 
 .tipoPokemon2 {
-    font-family: fonte-pokemon;
-    font-size: 20px;
+    font-family: Pixellari;
+    font-size: 25px;
     text-transform: capitalize;
-    letter-spacing: 2px;
-}
-
-.animadaNormal {
-    font-family: fonte-pokemon;
-    text-align: center;
+    margin: 0px 0px 0px 210px;
+    display: flex;
     position: absolute;
 }
 
-.animadaShiny {
-    font-family: fonte-pokemon;
-    position: absolute;
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.container {
+  height: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  margin: 0 auto;
+  width: 400px;
+  height: 600px;
+  border-radius: 25px;
+  transition: transform 0.25s;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: rgb(235, 235, 235);
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+
+
+.fundo {
+  height: 220px;
+  background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2fb2821a-1406-4a1d-9b04-6668f278e944/d874gjl-59e79083-fec5-4234-8879-2aa8afd7f9f4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJmYjI4MjFhLTE0MDYtNGExZC05YjA0LTY2NjhmMjc4ZTk0NFwvZDg3NGdqbC01OWU3OTA4My1mZWM1LTQyMzQtODg3OS0yYWE4YWZkN2Y5ZjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.dJDeQHUyfGNZVqPwE-cC30kVcX7f_dwtLe4CYd5Qsvo);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.pokemon-name {
+  font-size: 23px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+
+.info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.pokemon-stats {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: Pixellari;
+  margin: 40px 0px 0px 0px;
+  display: flex;
+}
+
+
+.moves {
+    font-family: Pixellari;
+    font-size: 20px;
+    font-weight: 600;
 }
